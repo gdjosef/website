@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("/fonts/UbuntuMono-R.ttf");
+}
+body {
+  margin: 1rem auto;
+  width: min(900px, 95vw);
+  background-image: url("/img/bg.gif");
+  font-family: "Ubuntu Mono", Courier, monospace;
+  color: rgb(255, 80, 133);
+  text-shadow: 0 0 1rem rgba(255, 80, 133, 0.5);
+  display: grid;
+  gap: 2rem;
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+a {
+  color: rgb(255, 143, 176);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.5, 1, 0.9, 1);
+}
+a:hover {
+  text-shadow: 0 0 1rem rgba(255, 143, 176, 0.8);
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+.container {
+  border: 1px solid black;
+}
+
+header {
+  padding: 0.5rem 1rem;
+  background: black url("/img/static.gif");
+}
+header > * {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 3fr 11fr;
+  gap: 1rem;
+}
+.content > * {
+  padding: 1rem;
+}
+
+.sidebar, main {
+  border: 1px solid rgb(255, 80, 133);
+  border-radius: 2px;
+  box-shadow: 0 0 0.5rem rgba(255, 80, 133, 0.5), 0 0 0.5rem rgba(255, 80, 133, 0.5) inset;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sidebar nav > a {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: rgb(255, 80, 133);
+  opacity: 0.8;
+  transition: all 0.3s cubic-bezier(0.5, 1, 0.9, 1);
+}
+.sidebar nav > a:hover {
+  padding-left: 0.2em;
+  letter-spacing: 0.2em;
+  opacity: 1;
+  text-shadow: 0 0 1rem rgba(0, 0, 255, 0.5);
+}
+.sidebar .webrings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.alula {
+  float: right;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+footer .buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 720px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

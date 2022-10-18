@@ -1,0 +1,138 @@
+$pink: rgba(255, 80, 133, 1);
+$light-pink: rgba(255, 143, 176, 1);
+$black-80: rgba(0, 0, 0, 0.8);
+$pink-80: rgba(255, 80, 133, 0.8);
+$light-pink-80: rgba(255, 143, 176, 0.8);
+$pink-50: rgba(255, 80, 133, 0.5);
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("/fonts/UbuntuMono-R.ttf");
+}
+
+body {
+  margin: 1rem auto;
+  width: min(900px, 95vw);
+
+  background-image: url("/img/bg.gif");
+  font-family: "Ubuntu Mono", Courier, monospace;
+  color: $pink;
+  text-shadow: 0 0 1rem $pink-50;
+
+  display: grid;
+  gap: 2rem;
+
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+a {
+  color: $light-pink;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.5, 1, 0.9, 1);
+
+  &:hover {
+    text-shadow: 0 0 1rem $light-pink-80;
+  }
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+.container {
+  border: 1px solid black;
+}
+
+header {
+  padding: 0.5rem 1rem;
+  background: black url("/img/static.gif");
+  // width: fit-content;
+  // border-left: 1px solid $pink;
+  // border-top: 1px solid $pink;
+  // border-right: 1px solid $pink;
+  // border-radius: 2px 2px 0 0;
+
+  > * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.content {
+  background-color: $black-80;
+  display: grid;
+  grid-template-columns: 3fr 11fr;
+  gap: 1rem;
+
+  > * {
+    padding: 1rem;
+  }
+}
+
+.sidebar, main {
+  border: 1px solid $pink;
+  border-radius: 2px;
+  box-shadow: 0 0 0.5rem $pink-50, 0 0 0.5rem $pink-50 inset;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  
+    > a {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: $pink;
+      opacity: 0.8;
+      transition: all 0.3s cubic-bezier(0.5, 1, 0.9, 1);
+  
+      &:hover {
+        padding-left: 0.2em;
+        letter-spacing: 0.2em;
+        opacity: 1;
+        text-shadow: 0 0 1rem rgba(0, 0, 255, 0.5);
+      }
+    }
+  }
+
+  .webrings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+}
+
+.alula { float: right;}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  .buttons {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 720px 0;
+  }
+}

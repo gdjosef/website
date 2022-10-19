@@ -23,7 +23,7 @@ a {
   transition: all 0.3s cubic-bezier(0.5, 1, 0.9, 1);
 }
 a:hover {
-  text-shadow: 0 0 1rem rgba(255, 143, 176, 0.8);
+  text-shadow: 0 0 1rem rgba(255, 80, 133, 0.8);
 }
 
 h2 {
@@ -92,6 +92,17 @@ header > * {
 
 .alula {
   float: right;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.introduction > img {
+  max-width: 100%;
+}
+.introduction ul {
+  list-style-type: square;
 }
 
 footer {

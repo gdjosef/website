@@ -1,9 +1,5 @@
 $pink: rgba(255, 80, 133, 1);
 $light-pink: rgba(255, 143, 176, 1);
-$black-80: rgba(0, 0, 0, 0.8);
-$pink-80: rgba(255, 80, 133, 0.8);
-$light-pink-80: rgba(255, 143, 176, 0.8);
-$pink-50: rgba(255, 80, 133, 0.5);
 
 @font-face {
   font-family: "Ubuntu Mono";
@@ -17,7 +13,7 @@ body {
   background-image: url("/img/bg.gif");
   font-family: "Ubuntu Mono", Courier, monospace;
   color: $pink;
-  text-shadow: 0 0 1rem $pink-50;
+  text-shadow: 0 0 1rem transparentize($pink, 0.5);
 
   display: grid;
   gap: 2rem;
@@ -34,7 +30,7 @@ a {
   transition: all 0.3s cubic-bezier(0.5, 1, 0.9, 1);
 
   &:hover {
-    text-shadow: 0 0 1rem $light-pink-80;
+    text-shadow: 0 0 1rem transparentize($pink, 0.2);
   }
 }
 
@@ -49,11 +45,6 @@ h2 {
 header {
   padding: 0.5rem 1rem;
   background: black url("/img/static.gif");
-  // width: fit-content;
-  // border-left: 1px solid $pink;
-  // border-top: 1px solid $pink;
-  // border-right: 1px solid $pink;
-  // border-radius: 2px 2px 0 0;
 
   > * {
     margin: 0;
@@ -62,7 +53,7 @@ header {
 }
 
 .content {
-  background-color: $black-80;
+  background-color: transparentize(black, 0.2);
   display: grid;
   grid-template-columns: 3fr 11fr;
   gap: 1rem;
@@ -75,7 +66,7 @@ header {
 .sidebar, main {
   border: 1px solid $pink;
   border-radius: 2px;
-  box-shadow: 0 0 0.5rem $pink-50, 0 0 0.5rem $pink-50 inset;
+  box-shadow: 0 0 0.5rem transparentize($pink, 0.5), 0 0 0.5rem transparentize($pink, 0.5) inset;
 }
 
 .sidebar {
@@ -114,6 +105,20 @@ header {
 }
 
 .alula { float: right;}
+
+// /webmaster.html
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  > img {
+    max-width: 100%;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+}
 
 footer {
   display: grid;

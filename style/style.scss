@@ -24,6 +24,10 @@ body {
   animation-timing-function: linear;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.83em 0;
+}
+
 a {
   color: $light-pink;
   text-decoration: none;
@@ -32,6 +36,10 @@ a {
   &:hover {
     text-shadow: 0 0 1rem transparentize($pink, 0.2);
   }
+}
+
+ul {
+  list-style-type: square;
 }
 
 h2 {
@@ -113,10 +121,6 @@ header {
 
   > img {
     max-width: 100%;
-  }
-  
-  ul {
-    list-style-type: square;
   }
 }
 

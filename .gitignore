@@ -4,3 +4,8 @@
 *.scss.map
 
 _*.*
+
+img/
+
+!static.gif
+!alulabutton*.gif

@@ -1,0 +1,27 @@
+@use 'base';
+
+// the basics
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: base.$pink transparent;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+
+  font-family: "Ubuntu Mono", Courier, monospace;
+  color: base.$pink;
+  text-shadow: 0 0 1rem transparentize(base.$pink, 0.5);
+}
+
+// webmaster.html
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  > img {
+    max-width: 100%;
+  }
+}

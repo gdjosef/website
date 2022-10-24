@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="style/style.css">
   <style>
-    #vvvvvv {
-      cursor: pointer;
+    .nineties {
+      color: yellow;
+      text-shadow: 1px 1px 0 skyblue, 2px 2px 0 rgb(255, 80, 133, 1);
     }
   </style>
-  <title>webmaster@josef</title>
+  <title>webmaster @ josef</title>
 </head>
 <body>
   <div class="container">
@@ -19,19 +20,19 @@
       <section class="sidebar">
         <nav>
           <a href="home.html">home</a>
-          <a href="about.html">about</a>
-          <a href="links">links</a>
+          <a href="webmaster.html">about</a>
+          <a href="links.html">links</a>
         </nav>
       </section>
       <main>
         <div class="introduction">
-          <img src="/img/alula_whiteboard.jpg" alt="Alula doodle on a whiteboard" title="i'd make this a cycle of my folder of oneshot art but i think all the artists would kill me if i did that so i had to resort to making my own">
+          <img src="/img/lula.jpg" alt="Alula art by @goyaeng2" title="by @goyaeng2 on twitter">
           <section class="about">
             <ul>
               <li><b>Name:</b> Josef</li>
               <li><b>Age:</b> 9.42028985507e-10:1, my age to the age of the universe</li>
               <li><b>Pronouns:</b> any/all, I don't mind</li>
-              <li><b>Vidya games I like:</b> <span id="vvvvvv" onclick="hurtSound.play()">VVVVVV</span>, Baba Is You, Squishcraft (no really, try it)</li>
+              <li><b>Vidya games I like:</b> <a href="https://thelettervsixtim.es/" title="Platformer without jumping, you've probably heard of it at least once">VVVVVV</a>, <a href="https://www.hempuli.com/baba/" title="Sokoban-style puzzle game where you manipulate the rules, also pulls a funny">Baba Is You</a>, <a href="https://store.steampowered.com/app/2081180/SquishCraft/" title="you gotta trust me">Squishcraft</a> (no really, try it)</li>
               <li><b>Size of OneShot art folder:</b> 156</li>
             </ul>
           </section>
@@ -40,9 +41,32 @@
           <h2>PAQ (possibly asked questions)</h2>
           <section class="toc">
             <ul>
-              <li><a href="#dummy">dummy</a></li>
+              <li><a href="#get-into-neocities">How'd you get into NeoCities?</a></li>
+              <li><a href="#learn-html-css-js">How'd you learn HTML/CSS/JS?</a></li>
+              <li><a href="#use-to-code">What do you use to write/code your website?</a></li>
+              <li><a href="#influences-site-design">Influences on your site design?</a></li>
             </ul>
           </section>
+          <article>
+            <h3 id="get-into-neocities">How'd you get into NeoCities?</h3>
+            <p>I got into NeoCities trying to find a website to make a road sign generator. After being bored for a bit, I ran across a NeoCities link and what led to it was sparkles, imood statuses, autoplaying music, and GIFs galore. Unfortunately, for the life of me, I can't find it anymore due to me switching Firefox profiles and the browser history being like drowned out by 4 months worth of web browsing.</p>
+            <p>Although even before that, I was always fascinated by Japanese ISP websites. Which sound exactly like what they are. Even if I couldn't read them by heart, seeing all the images and Japanese text was really charming imagining someone just updating their new blog for all their friends to see, whoever they might be.</p>
+          </article>
+          <article>
+            <h3 id="learn-html-css-js">How'd you learn HTML/CSS/JS?</h3>
+            <p>As opposed to a majority of users on this site, I did not infact learn HTML/CSS for the purpose of making websites on here! Before this, I was super into making Discord bots. DEFINITELY NOT PRODUCTION READY, but learning the aspects of JavaScript one by one was fun! Of course, none of that was HTML/CSS because Node.js stuff. That was my kickstart with JavaScript basically. I continued with a Codecademy course and the rest is history.</p>
+            <p>My HTML/CSS knowledge started out mostly from little tidbits of information from my curiosity around the web although I gradually went into <a href="https://developer.mozilla.com/">MDN</a>'s <i><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Getting started with the web</a></i> guide to expand my knowledge more. Do recommend.</p>
+          </article>
+          <article>
+            <h3 id="use-to-code">What do you use to write/code your website?</h3>
+            <p><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>! I sort of don't care <i>that</i> much about VSCode's telemetry, its probably* going somewhere good anyway. <a href="https://vscodium.com/" target="_blank">VSCodium</a> if you care enough about privacy to warrant needing it. Exact same, but just built from source w/o telemetry to Microsoft.</p>
+            <p>As much as I'm retroactively nostalgic for the old web, I will forever be loyal to much more fleshed out code editors. Fair enough if you like making a website like this using just Notepad to emulate that <span class="nineties">*90s*</span> feel (just use Dreamweaver) but I seriously cannot live without it since I've basically been making websites even before NeoCities.</p>
+            <p>* emphasis on <i>probably</i></p>
+          </article>
+          <article>
+            <h3 id="influences-site-design">Influences on your site design?</h3>
+            <p>A lot of this is heavily based on <a href="https://eggramen.neocities.org/" target="_blank">EGGRAMEN</a>'s site layout although none of it was copy-pasted verbatim. Weirdly enough, Baba Is You was why I picked this accent colour. Of course, the OneShot characters plastered on here are from, you guessed it, OneShot. And last but not least, <a href="https://obspogon.neocities.org/" target="_blank">Obspogon</a> for inspring the black-on-accent-color style I used for the majority of this site as a whole. Thanks guys.</p>
+          </article>
         </div>
       </main>
     </div>
@@ -55,8 +79,5 @@
       <a href="/"><img src="/img/buttons/alulabutton.gif" alt="josef.neocities.org"></a>
     </section>
   </footer>
-  <script>
-    let hurtSound = new Audio("/sounds/hurt.wav");
-  </script>
 </body>
 </html>

@@ -106,17 +106,6 @@ header > * {
   gap: 0.25rem;
 }
 
-main {
-  align-self: stretch;
-}
-main .buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;

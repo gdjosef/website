@@ -6,6 +6,7 @@
 _*.*
 
 img/
+old/
 
 !static.gif
 !alulabutton*.gif

@@ -1,0 +1,12 @@
+2022-oct-25
+oh my god i finally finished what i need to do
+now maybe don't just not update the site till then
+
+2022-oct-19*
+- finished the bare minimum to start fixing the styling
+
+2022-oct-18*
+- website revamp started
+- scss time
+
+* are based off git commits

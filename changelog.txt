@@ -1,3 +1,6 @@
+2022-oct-26
+journal entry1!!
+
 2022-oct-25
 oh my god i finally finished what i need to do
 now maybe don't just not update the site till then
@@ -10,3 +13,5 @@ now maybe don't just not update the site till then
 - scss time
 
 * are based off git commits
+
+you know we keep this a secret between us

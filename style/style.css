@@ -24,6 +24,10 @@ ul {
   list-style-type: square;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 1rem auto;
   width: min(900px, 95vw);
@@ -39,6 +43,8 @@ body {
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .container {
